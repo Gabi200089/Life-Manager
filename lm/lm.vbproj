@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C37B1324-D4F1-4B95-A64C-F8399A0A6817}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>lm.My.MyApplication</StartupObject>
+    <RootNamespace>lm</RootNamespace>
+    <AssemblyName>lm</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>lm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>lm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\小管家_去背板.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.20\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form0.Designer.vb">
+      <DependentUpon>Form0.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="information.Designer.vb">
+      <DependentUpon>information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memo.Designer.vb">
+      <DependentUpon>memo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="memo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memorandum.Designer.vb">
+      <DependentUpon>memorandum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="memorandum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mything.Designer.vb">
+      <DependentUpon>mything.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mything.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.vb">
+      <DependentUpon>register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shoppinglist.Designer.vb">
+      <DependentUpon>shoppinglist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shoppinglist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start.Designer.vb">
+      <DependentUpon>start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form0.resx">
+      <DependentUpon>Form0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="information.resx">
+      <DependentUpon>information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memo.resx">
+      <DependentUpon>memo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memorandum.resx">
+      <DependentUpon>memorandum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mything.resx">
+      <DependentUpon>mything.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shoppinglist.resx">
+      <DependentUpon>shoppinglist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1420990701-1090610042.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b6e29edf18568a005f047e8a032a3a21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba94e623ae771368b3e58273554ae5af.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-and-finance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commerce-and-shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open address-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signs %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smileys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools-and-utensils.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\小管家_去背板.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\小管家開門.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\主選單.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白底背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白底背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白底背景3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刪除.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按鈕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按鈕粉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按鈕藍.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粉底背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粉底背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粉底背景3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\開心管家.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\對話框.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\編輯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\懊惱管家.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\會員資料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\小管家_去背板.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\便條紙2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\便條紙1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\便條紙3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\便條紙4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\開心老劉.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\懊惱管家.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\老劉開門1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
